@@ -19,7 +19,7 @@ const dispro = [
     ],
     "Github": "https://github.com/your-github-repo",  
     "Img": "/institute.png",
-    "Link": "https://your-live-demo-link.com",  
+    // "Link": "https://your-live-demo-link.com",  
     "TechStack": ["PHP", "HTML", "CSS", "JavaScript", "MySQL"],
     "Title": "Institute Management System"
   },
@@ -33,9 +33,9 @@ const dispro = [
       "Integrated Razorpay for secure online payments.",
       "Users can view and update their profiles and saved addresses."
     ],
-    "Github": "https://github.com/your-github-repo",  
+    "Github": "https://github.com/Hemanth1551/HeelDrive.git",  
     "Img": "/shoe.png",
-    "Link": "https://your-live-demo-link.com",  
+    // "Link": "https://your-live-demo-link.com",  
     "TechStack": ["Spring Boot", "Java", "HTML", "CSS", "JavaScript", "Razorpay API"],
     "Title": "Online Shoe Booking WebApp"
   },
@@ -49,7 +49,7 @@ const dispro = [
       "Accepts patient details (e.g., glucose level, BMI, age) as input for prediction.",
       "Displays results instantly with a confidence score."
     ],
-    "Github": "https://github.com/your-github-repo",  
+    "Github": "https://github.com/Hemanth1551/DiabetesPrediction.git",  
     "Img": "/dia.png",
     "Link": "https://diabetesprediction-mzwk.onrender.com/",  
     "TechStack": ["Flask", "Python", "Machine Learning", "HTML", "CSS"],
@@ -63,7 +63,7 @@ const dispro = [
       "Real-time data fetched using API calls.",
       "Responsive and modern user interface."
     ],
-    Github: "https://github.com/your-github-repo",
+    Github: "https://github.com/Hemanth1551/Prasunet_WD_05.git",
     Img: "/weather.png",
     Link: "https://prasunet-wd-05-green.vercel.app/",
     TechStack: ["HTML", "CSS", "JavaScript", "Weather API"],
@@ -77,7 +77,7 @@ const dispro = [
       "Instant win/draw detection and reset functionality.",
       "Simple and user-friendly interface."
     ],
-    Github: "https://github.com/your-github-repo",
+    Github: "https://github.com/Hemanth1551/Prasunet_WD_03.git",
     Img: "/tic.png",
     Link: "https://prasunet-wd-03-two.vercel.app/",
     TechStack: ["HTML", "CSS", "JavaScript"],
@@ -91,7 +91,7 @@ const dispro = [
       "Project and internship showcase sections.",
       "Fully custom-built using HTML, CSS, and JS."
     ],
-    Github: "https://github.com/your-github-repo",
+    Github: "https://github.com/Hemanth1551/Prasunet_WD_04.git",
     Img: "/pro.png",
     Link: "https://prasunet-wd-04-eight.vercel.app/",
     TechStack: ["HTML", "CSS", "JavaScript"],
@@ -105,7 +105,7 @@ const dispro = [
       "Lap recording feature for time tracking.",
       "Minimal and clean design."
     ],
-    Github: "https://github.com/your-github-repo",
+    Github: "https://github.com/Hemanth1551/Prasunet_WD_02.git",
     Img: "/stop.png",
     Link: "https://prasunet-wd-02-sepia.vercel.app/",
     TechStack: ["HTML", "CSS", "JavaScript"],
@@ -119,7 +119,7 @@ const dispro = [
       "Built with Hugging Face transformers and Streamlit.",
       "Interactive and real-time responses with clean UI."
     ],
-    Github: "https://github.com/your-github-repo",
+    Github: "https://github.com/Hemanth1551/AI-Health-Assistant.git",
     Img: "/chat.jpg",
     // Link: "https://your-live-demo-link.com",
     TechStack: ["Python", "Machine Learning", "Hugging Face", "Streamlit"],
@@ -222,15 +222,24 @@ const ProjectDetails = () => {
             <p className="text-lg text-gray-300/90">{project.Description}</p>
 
             <div className="flex flex-wrap gap-4">
-              <a
-                href={project.Link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-flex items-center space-x-2 px-8 py-4 bg-gradient-to-r from-blue-600/10 to-purple-600/10 text-blue-300 rounded-xl transition-all border border-blue-500/20 hover:border-blue-500/40 text-base"
-              >
-                <ExternalLink className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-                <span>Live Demo</span>
-              </a>
+              {project.Link ? (
+                <a
+                  href={project.Link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center space-x-2 px-8 py-4 bg-gradient-to-r from-blue-600/10 to-purple-600/10 text-blue-300 rounded-xl transition-all border border-blue-500/20 hover:border-blue-500/40 text-base"
+                >
+                  <ExternalLink className="w-5 h-5 group-hover:rotate-12 transition-transform" />
+                  <span>Live Demo</span>
+                </a>
+              ) : (
+                <div className="inline-flex items-center space-x-2 px-8 py-4 bg-gray-800 text-gray-400 rounded-xl border border-gray-600 text-base">
+                  <ExternalLink className="w-5 h-5 opacity-50" />
+                  <span>Link not available</span>
+                </div>
+              )}
+
+
 
               <a
                 href={project.Github}
