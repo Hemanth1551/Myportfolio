@@ -193,12 +193,10 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              AI & Full-Stack Developer with hands-on experience in AI, web
-              development, and cloud computing. Skilled in Python, Java,
-              JavaScript, PHP, and databases. Built AI-driven projects like
-              Health Assistant and Diabetes Predictor. Experienced in Microsoft
-              Azure and currently advancing DSA with Java for problem-solving
-              and software development.
+              Highly motivated AI & Full-Stack Developer with experience in machine learning, web development, and cloud 
+deployment. Proficient in Python, Java, JavaScript, and relational databases. Built and deployed AI-powered solutions 
+including a Diabetes Prediction System with 80% accuracy. Currently sharpening data structures and algorithms in Java, 
+seeking opportunities in AI-driven software engineering roles.
             </p>
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
               <a href="HemanthResume.pdf" download className="w-full lg:w-auto">
