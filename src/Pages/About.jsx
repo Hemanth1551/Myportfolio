@@ -199,7 +199,7 @@ including a Diabetes Prediction System with 80% accuracy. Currently sharpening d
 seeking opportunities in AI-driven software engineering roles.
             </p>
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
-              <a href="HemanthResume.pdf" download className="w-full lg:w-auto">
+              <a href="https://drive.google.com/file/d/1IQC-LY25W83sVsX3veEiqzgeHDw91NGs/view?usp=sharing" download className="w-full lg:w-auto">
                 <button
                   data-aos="fade-up"
                   data-aos-duration="800"
